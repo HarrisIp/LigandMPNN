@@ -52,7 +52,7 @@ def normalize_residue_groups(output):
             normalized_output.append(normalized_group)
     return '|'.join(normalized_output)
     
+                            #chain_lengths, num_components, C symmetry_order
+print(generate_residue_groups([100, 120], 2, 5))
 
-print(generate_residue_groups([100, 120, 80], 3, 3))
-
-print(normalize_residue_groups(generate_residue_groups([100, 120, 80], 3, 3)))
+print(normalize_residue_groups(generate_residue_groups([100, 120], 2, 5)))
